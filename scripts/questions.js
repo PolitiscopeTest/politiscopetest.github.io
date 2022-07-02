@@ -80,7 +80,6 @@ var questions = [
     makeQuestion(
         "From each according to his ability, to each according to his needs.",
         [
-
             makeTenet("economic", true),
             makeTenet("ind-vs-coll", true),
             makeMajorPoint("political-traditionalism", true)
@@ -242,8 +241,8 @@ var questions = [
     makeQuestion(
         "War is beneficial for the economy.",
         [
-            makeTenet("war-stance"),
-            makeMajorPoint
+            makeTenet("war-stance", true),
+            makeMajorPoint("power-struct", false)
         ]
     )
 ]
