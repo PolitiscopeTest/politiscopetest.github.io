@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Politiscope Quiz</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+    <script src='scripts/main.js'></script>
+    <script src='scripts/questions.js'></script>
+</head>
+
+<body>
+    <div id="title">
+        <h1>Politiscope Test</h1>
+    </div>
+    <h1 id="quest-num"></h1>
+    <p id="quest-body" class="question"></p>
+    <div id="agree-section">
+        <button class="optionButton" id="strongAgree" onclick="makeChoice('strongAgree')">Strongly Agree</button>
+        <button class="optionButton" id="agree" onclick="makeChoice('agree')">Agree</button>
+    </div>
+    <div id="neutral-section">
+        <button class="optionButton" id="neutral" onclick="makeChoice('neutral')">Neutral or Undecided</button>
+    </div>
+    <div id="disagree-section">
+        <button class="optionButton" id="disagree" onclick="makeChoice('disagree')">Disagree</button>
+        <button class="optionButton" id="strongDisagree" onclick="makeChoice('strongDisagree')">Strongly Disagree</button>
+    </div>
+
+    <button id="back" class="optionButton" onclick="prevQuestion()">Previous</button>
+
+    <script>
+        init();
+        questionsInit();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Your Results</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+    <style>
+        h2 {
+            color: #eeeeee;
+            font-size: 36pt;
+            line-height: 36pt;
+            text-align: inherit;
+        }
+
+        body {
+            text-align: left;
+        }
+
+        .label {
+            color: #eeeeee;
+        }
+    </style>
+    <script src="scripts/ideologies.js"></script>
+</head>
+
+<body>
+    <div id="title" style="text-align: center;">
+        <h1>Politiscope Test</h1>
+    </div>
+    <h2 style="text-align: center; font-size: 2.5em;">Results</h2>
+
+    <h2><span style="font-weight: 300;" id="a-label" class="label"></span></h2>
+    <div class="bar" style="margin-left: auto; margin-right: auto;">
+        <img src="imgs/market.png" alt="Market Score Picture" height="128px">
+        <div class="percent-bar bar-left" style="background-color: rgb(0, 173, 0);" id="market">
+            <div class="text-wrapper">
+            </div>
+        </div>
+        <div class="percent-bar bar-right" style="background-color: rgb(255, 0, 0);" id="equality">
+            <div class="text-wrapper">
+            </div>
+        </div>
+        <img src="imgs/equality.png" alt="Equality Score Picture" height="128px">
+    </div>
+
+    <h2><span style="font-weight: 300;" id="b-label" class="label"></span></h2>
+    <div class="bar" style="margin-left: auto; margin-right: auto;">
+        <img src="imgs/authoritarian.png" alt="Authoritarian Score Picture" height="128px">
+        <div class="percent-bar bar-left" style="background-color: rgb(255, 151, 151);" id="authoritarian">
+            <div class="text-wrapper">
+            </div>
+        </div>
+        <div class="percent-bar bar-right" style="background-color: rgb(0, 153, 255);" id="libertarian">
+            <div class="text-wrapper">
+            </div>
+        </div>
+        <img src="imgs/libertarian.png" alt="Libertarian Score Picture" height="128px">
+    </div>
+
+    <h2><span style="font-weight: 300;" id="c-label" class="label"></span></h2>
+    <div class="bar" style="margin-left: auto; margin-right: auto;">
+        <img src="imgs/individualism.png" alt="Individualism Score Picture" height="128px">
+        <div class="percent-bar bar-left" style="background-color: rgb(0, 0, 255);" id="individualist">
+            <div class="text-wrapper">
+            </div>
+        </div>
+        <div class="percent-bar bar-right" style="background-color: rgb(255, 127, 40);" id="collectivist">
+            <div class="text-wrapper">
+            </div>
+        </div>
+        <img src="imgs/collectivism.png" alt="Collectivism Score Picture" height="128px">
+    </div>
+
+    <h2><span style="font-weight: 300;" id="d-label" class="label"></span></h2>
+    <div class="bar" style="margin-left: auto; margin-right: auto;">
+        <img src="imgs/conservatism.png" alt="Conservatism Score Picture" height="128px">
+        <div class="percent-bar bar-left" style="background-color: rgb(172, 0, 0);" id="conservatism">
+            <div class="text-wrapper">
+            </div>
+        </div>
+        <div class="percent-bar bar-right" style="background-color: rgb(69, 36, 255);" id="liberalism">
+            <div class="text-wrapper">
+            </div>
+        </div>
+        <img src="imgs/liberalism.png" alt="Liberalism Score Picture" height="128px">
+    </div>
+
+    <h2><span style="font-weight: 300;" id="e-label" class="label"></span></h2>
+    <div class="bar" style="margin-left: auto; margin-right: auto;">
+        <img src="imgs/federalism.png" alt="Federalism Score Picture" height="128px">
+        <div class="percent-bar bar-left" style="background-color: rgb(255, 255, 0);" id="federalism">
+            <div class="text-wrapper">
+            </div>
+        </div>
+        <div class="percent-bar bar-right" style="background-color: rgb(0, 0, 0);" id="statism">
+            <div class="text-wrapper" style="color: #eeeeee;">
+            </div>
+        </div>
+        <img src="imgs/statism.png" alt="Statism Score Picture" height="128px">
+    </div>
+
+    <h2><span style="font-weight: 300;" id="f-label" class="label"></span></h2>
+    <div class="bar" style="margin-left: auto; margin-right: auto;">
+        <img src="imgs/freedom.png" alt="Freedom Score Picture" height="128px">
+        <div class="percent-bar bar-left" style="background-color: rgb(201, 255, 86);" id="freedom">
+            <div class="text-wrapper">
+            </div>
+        </div>
+        <div class="percent-bar bar-right" style="background-color: rgb(94, 251, 175);" id="security">
+            <div class="text-wrapper">
+            </div>
+        </div>
+        <img src="imgs/security.png" alt="Security Score Picture" height="128px">
+    </div>
+
+    <h2><span style="font-weight: 300;" id="g-label" class="label"></span></h2>
+    <div class="bar" style="margin-left: auto; margin-right: auto;">
+        <img src="imgs/globalism.png" alt="Globalism Score Picture" height="128px">
+        <div class="percent-bar bar-left" style="background-color: rgb(0, 109, 4);" id="globalist">
+            <div class="text-wrapper">
+            </div>
+        </div>
+        <div class="percent-bar bar-right" style="background-color: rgb(123, 0, 255);" id="sovereigntist">
+            <div class="text-wrapper">
+            </div>
+        </div>
+        <img src="imgs/sovereigntism.png" alt="Sovereigntism Score Picture" height="128px">
+    </div>
+
+    <h2><span style="font-weight: 300;" id="h-label" class="label"></span></h2>
+    <div class="bar" style="margin-left: auto; margin-right: auto;">
+        <img src="imgs/pacifism.png" alt="Pacifism Score Picture" height="128px">
+        <div class="percent-bar bar-left" style="background-color: rgb(255, 0, 123);" id="pacifist">
+            <div class="text-wrapper">
+            </div>
+        </div>
+        <div class="percent-bar bar-right" style="background-color: rgb(0, 224, 52);" id="militarist">
+            <div class="text-wrapper">
+            </div>
+        </div>
+        <img src="imgs/militarist.png" alt="Militarism Score Picture" height="128px">
+    </div>
+    <div class="break"></div>
+
+    <div style="text-align: center;">
+        <h2 class="ideology">Closest Ideology Match: <span class="weight-300" id="ideology-label"></span></h2>
+    </div>
+
+    <div class="break"></div>
+    <div style="text-align: center;">
+        <button class="btn" onclick="location.replace('index.html')">Return to main menu</button>
+    </div>
+</body>
+
+<script src='scripts/results.js'></script>
+
+</html>
