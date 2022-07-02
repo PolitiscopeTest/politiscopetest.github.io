@@ -141,9 +141,9 @@ for (var i = 0; i < ideologies.length; i++) {
     dist += Math.pow(Math.abs(ideologies[i].stats.econ - econOpposite), 2)
     dist += Math.pow(Math.abs(ideologies[i].stats.govt - powerStructOpposite), 2) 
     dist += Math.pow(Math.abs(ideologies[i].stats.dipl - globalPolicy), 1.73856063)
-    dist += Math.pow(Math.abs(ideologies[i].stats.scty - politicalTraditionalism), 1.73856063)
+    dist += Math.pow(Math.abs(ideologies[i].stats.scty - politicalTraditionalismOpposite), 1.73856063)
     dist += Math.pow(Math.abs(ideologies[i].stats.free - freeVsSecOpposite), 2)
-    dist += Math.pow(Math.abs(ideologies[i].stats.indi - indVsColl), 1.5)
+    dist += Math.pow(Math.abs(ideologies[i].stats.indi - indVsCollOpposite), 1.73856063)
     if (dist < ideodist) {
         ideology = ideologies[i].name
         ideodist = dist

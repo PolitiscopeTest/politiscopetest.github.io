@@ -280,8 +280,8 @@ ideologies = [
             "dipl": 60,
             "govt": 20,
             "scty": 70,
-            "free": 65,
-            "indi": 35
+            "free": 100,
+            "indi": 50
         }
     },
     {

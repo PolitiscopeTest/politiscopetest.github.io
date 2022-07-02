@@ -192,7 +192,7 @@ var questions = [
     makeQuestion(
         "A nation requires a strong military to remain independent", 
         [
-            makeTenet("war-stance", false),
+            makeTenet("war-stance", true),
             makeMinorPoint("global-policy", true)
         ]
     ),
@@ -206,8 +206,8 @@ var questions = [
     makeQuestion(
         "There are many issues that it does not make sense to address at a local level.",
         [
-            makeMajorPoint("power-dist", false),
-            makeMinorPoint("power-struct", true)
+            makeMajorPoint("power-dist", true),
+            makeMinorPoint("power-struct", false)
         ]
     ),
     makeQuestion(
