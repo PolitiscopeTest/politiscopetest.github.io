@@ -99,14 +99,14 @@ globalPolicy = parseURLVariable("global-policy");
 politicalTraditionalism = parseURLVariable("political-traditionalism");
 powerStruct = parseURLVariable("power-struct");
 
-econOpposite = 200 - economic;
-powerDistOpposite = 200 - powerDist;
-freeVsSecOpposite = 200 - freeVsSec;
-warStanceOpposite = 200 - warStance;
-indVsCollOpposite = 200 - indVsColl;
-globalPolicyOpposite = 200 - globalPolicy;
-politicalTraditionalismOpposite = 200 - politicalTraditionalism;
-powerStructOpposite = 200 - powerStruct;
+econOpposite = 300 - economic;
+powerDistOpposite = 300 - powerDist;
+freeVsSecOpposite = 300 - freeVsSec;
+warStanceOpposite = 300 - warStance;
+indVsCollOpposite = 300 - indVsColl;
+globalPolicyOpposite = 300 - globalPolicy;
+politicalTraditionalismOpposite = 300 - politicalTraditionalism;
+powerStructOpposite = 300 - powerStruct;
 
 setBarValue("market", economic);
 setBarValue("equality", econOpposite);
