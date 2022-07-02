@@ -29,28 +29,28 @@ let leftArray = ["Market", "Authoritarian", "Individualist", "Conservatism", "Fe
 let rightArray = ["Equality", "Libertarian", "Collectivist", "Liberalism", "Statism", "Security", "Sovereigntist", "Militarist"]
 
 function setLabel(val, axis) {
-    if (val >= 90) {
+    if (val >= 270) {
         return "Fanatic " + leftArray[axis]
     }
-    else if (val >= 80) {
+    else if (val >= 240) {
         return "Extreme " + leftArray[axis]
     }
-    else if (val >= 70) {
+    else if (val >= 210) {
         return leftArray[axis]
     }
-    else if (val >= 60) {
+    else if (val >= 180) {
         return "Moderate " + leftArray[axis]
     }
-    else if (val > 40) {
+    else if (val > 120) {
         return "Neutral"
     }
-    else if (val > 30) {
+    else if (val > 90) {
         return "Moderate " + rightArray[axis]
     }
-    else if (val > 20) {
+    else if (val > 60) {
         return rightArray[axis]
     }
-    else if (val > 10) {
+    else if (val > 30) {
         return "Extreme " + rightArray[axis]
     }
     else {
@@ -59,28 +59,28 @@ function setLabel(val, axis) {
 }
 
 function setLabelGlobalPolicy(val) {
-    if (val >= 90) {
+    if (val >= 270) {
         return "Fanatic Globalist"
     }
-    else if (val >= 80) {
+    else if (val >= 240) {
         return "Extreme Globalist"
     }
-    else if (val >= 70) {
+    else if (val >= 210) {
         return "Globalist"
     }
-    else if (val >= 60) {
+    else if (val >= 180) {
         return "Moderate Globalist"
     }
-    else if (val > 40) {
+    else if (val > 120) {
         return "Non-Aligned"
     }
-    else if (val > 30) {
+    else if (val > 90) {
         return "Moderate Patriot"
     }
-    else if (val > 20) {
+    else if (val > 60) {
         "Patriot"
     }
-    else if (val > 10) {
+    else if (val > 30) {
         return "Nationalist"
     }
     else {
