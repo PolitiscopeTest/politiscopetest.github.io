@@ -190,7 +190,7 @@ var questions = [
         ]
     ),
     makeQuestion(
-        "A nation requires a strong military to remain independent", 
+        "A nation requires a strong military to remain independent.",
         [
             makeTenet("war-stance", true),
             makeMinorPoint("global-policy", true)
@@ -263,41 +263,41 @@ var questions = [
         ]
     ),
     makeQuestion(
-        "The national government doesn't represent the interests of its people",
+        "The national government doesn't represent the interests of its people.",
         [
             makeMajorPoint("power-dist", false)
         ]
     ),
     makeQuestion(
-        "Only those who serve in the military should be allowed to make decisions for the country",
+        "Only those who serve in the military should be allowed to make decisions for the country.",
         [
             makeTenet("war-stance", true),
             makeMajorPoint("power-struct", false)
         ]
     ),
     makeQuestion(
-        "People who served in the military should be respected",
+        "People who served in the military should be respected.",
         [
             makeMajorPoint("war-stance", true),
             makeMinorPoint("global-policy", true)
         ]
     ),
     makeQuestion(
-        "People who served in the military deserve preferencial treatment",
+        "People who served in the military deserve preferencial treatment.",
         [
             makeMajorPoint("war-stance", true),
             makeMajorPoint("ind-vs-coll", true)
         ]
     ),
     makeQuestion(
-        "There should be mandatory military service",
+        "There should be mandatory military service.",
         [
             makeMajorPoint("war-stance", true),
             makeMajorPoint("power-struct", false)
         ]
     ),
     makeQuestion(
-        "Diplomatic options should always be tried before war is even considered",
+        "Diplomatic options should always be tried before war is even considered.",
         [
             makeMajorPoint("war-stance", false)
         ]
@@ -310,21 +310,21 @@ var questions = [
         ]
     ),
     makeQuestion(
-        "We have no right to militarily intervene in other nations",
+        "We have no right to militarily intervene in other nations.",
         [
             makeMajorPoint("war-stance", false),
             makeMajorPoint("political-traditionalism", false)
         ]
     ),
     makeQuestion(
-        "Those who disagree with the government should be removed from the country",
+        "Those who disagree with the government should be removed from the country.",
         [
             makePointObj("free-vs-sec", -16, -12, 2, 4),
             makeTenet("power-struct", false)
         ]
     ),
     makeQuestion(
-        "Those who say things against the government deserve to be imprisoned",
+        "Those who say things against the government deserve to be imprisoned.",
         [
             makePointObj("free-vs-sec", -8, -6, 2, 4),
             makeTenet("power-struct", false),
@@ -332,7 +332,7 @@ var questions = [
         ]
     ),
     makeQuestion(
-        "The death penalty should be used for all felonies",
+        "The death penalty should be used for all felonies.",
         [
             makePointObj("free-vs-sec", -8, -6, 2, 4),
             makeTenet("power-struct", false),
@@ -340,14 +340,14 @@ var questions = [
         ]
     ),
     makeQuestion(
-        "Laws are important to ensure civilized society",
+        "Laws are important to ensure civilized society.",
         [
             makePointObj("free-vs-sec", 4, 2, -1, -2),
             makeMinutePoint("power-struct", false)
         ]
     ),
     makeQuestion(
-        "No authority should be questioned",
+        "No authority should be questioned.",
         [
             makeMajorPoint("power-struct", false),
             makeMajorPoint("free-vs-sec", true),
@@ -355,13 +355,13 @@ var questions = [
         ]
     ),
     makeQuestion(
-        "Whistleblowers should be strongly protected",
+        "Whistleblowers should be strongly protected.",
         [
             makeMajorPoint("free-vs-sec", false),
         ]
     ),
     makeQuestion(
-        "Equality of outcome is important",
+        "Equality of outcome is important.",
         [
             makeTenet("economic", true),
             makeMajorPoint("ind-vs-coll", true),
@@ -369,7 +369,7 @@ var questions = [
         ]
     ),
     makeQuestion(
-        "The rich do not pay their fair share",
+        "The rich do not pay their fair share.",
         [
             makeTenet("economic", true),
             makeMajorPoint("ind-vs-coll", true),
@@ -378,7 +378,7 @@ var questions = [
         ]
     ),
     makeQuestion(
-        "Universal Basic Income is necessary",
+        "Universal Basic Income is necessary.",
         [
             makeMajorPoint("political-traditionalism", true),
             makeMajorPoint("economic", true),
@@ -386,7 +386,7 @@ var questions = [
         ]
     ),
     makeQuestion(
-        "Everyone has the rights to universal healthcare, offordable housing, and a stable job",
+        "Everyone has the rights to universal healthcare, offordable housing, and a stable job.",
         [
             makeMajorPoint("economic", true),
             makeMajorPoint("political-traditionalism", true),
@@ -394,13 +394,13 @@ var questions = [
         ]
     ),
     makeQuestion(
-        "Documents like the Constitution are \"Living Documents,\" meaning they can be interpreted based on the context of the situation",
+        "Documents like the Constitution are \"Living Documents,\" meaning they can be interpreted based on the context of the situation.",
         [
             makeTenet("political-traditionalism", true),
         ]
     ),
     makeQuestion(
-        "All firearms should be banned",
+        "All firearms should be banned.",
         [
             makeMajorPoint("free-vs-sec", true),
             makeTenet("power-struct", false),
@@ -409,27 +409,27 @@ var questions = [
         ]
     ),
     makeQuestion(
-        "Local governments should have more power than they currently do",
+        "Local governments should have more power than they currently do.",
         [
             makeTenet("power-dist", false)
         ]
     ),
     makeQuestion(
-        "Many laws should depend more on the residents of a local area rather then the residents of the nation",
+        "Many laws should depend more on the residents of a local area rather then the residents of the nation.",
         [
             makeMajorPoint("power-dist", false),
             makeMinorPoint("political-traditionalism", false)
         ]
     ),
     makeQuestion(
-        "Local governments can handle issues that the national government can't",
+        "Local governments can handle issues that the national government can't.",
         [
             makeMajorPoint("power-dist", false),
             makeMinorPoint("political-traditionalism", false)
         ]
     ),
     makeQuestion(
-        "The United Nations should have a military to enforce its resolutions",
+        "The United Nations should have a military to enforce its resolutions.",
         [
             makeMajorPoint("global-policy", false),
             makeMinorPoint("political-traditionalism", false),
@@ -437,34 +437,34 @@ var questions = [
         ]
     ),
     makeQuestion(
-        "We are not members of a nation, instead we are members of this planet",
+        "We are not members of a nation, instead we are members of this planet.",
         [
             makeMajorPoint("global-policy", false),
             makeMinorPoint("ind-vs-coll", true)
         ]
     ),
     makeQuestion(
-        "Protectionism is always necessary to protect a nation's economy",
+        "Protectionism is always necessary to protect a nation's economy.",
         [
             makeMajorPoint("global-policy", true),
             makeMinorPoint("economic", true)
         ]
     ),
     makeQuestion(
-        "My nation is closer to my views than most nations in the world",
+        "My nation is closer to my views than most nations in the world.",
         [
             makeMajorPoint("global-policy", true),
         ]
     ),
     makeQuestion(
-        "People should not be be free because they are unable to make the correct decisions for themselves",
+        "People should not be be free because they are unable to make the correct decisions for themselves.",
         [
             makePointObj("free-vs-sec", -100, -50, 2, 4),
             makePointObj("power-struct", 100, 50, -2, -4),
         ]
     ),
     makeQuestion(
-        "The government should control the whole economy to prevent the exploitation of the masses",
+        "The government should control the whole economy to prevent the exploitation of the masses.",
         [
             makePointObj("economy", -100, -50, 2, 4),
             makePointObj("ind-vs-coll", -20, -10, 2, 4),
