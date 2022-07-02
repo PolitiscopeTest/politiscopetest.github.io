@@ -53,16 +53,16 @@ function setLabel(val, axis) {
 
 function setLabelGlobalPolicy(val) {
     if (val >= 90) {
-        return "Fanatic " + leftArray[axis]
+        return "Fanatic Globalist"
     }
     else if (val >= 80) {
-        return "Extreme " + leftArray[axis]
+        return "Extreme Globalist"
     }
     else if (val >= 70) {
-        return leftArray[axis]
+        return "Globalist"
     }
     else if (val >= 60) {
-        return "Moderate " + leftArray[axis]
+        return "Moderate Globalist"
     }
     else if (val > 40) {
         return "Non-Aligned"
