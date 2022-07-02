@@ -151,3 +151,4 @@ for (var i = 0; i < ideologies.length; i++) {
 }
 
 document.getElementById("ideology-label").innerHTML = ideology
+document.getElementsByTagName("title")[0].innerHTML = "Your Results - " + ideology
