@@ -231,3 +231,7 @@ p.question {
     width: 20%;
     height: 30%;
 }
+
+#back:hover {
+    background-color: rgb(136, 136, 136);
+}
