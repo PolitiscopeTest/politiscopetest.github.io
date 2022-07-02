@@ -34,7 +34,7 @@ var nextQuestion = function () {
     else {
         current_question = finalQuestions[quest_num];
         header = document.getElementById("quest-num");
-        header.innerHTML = "Question " + (1 + quest_num).toString() + " of 100";
+        header.innerHTML = "Question " + (1 + quest_num).toString() + " of " + questions.length.toString();
         questBody = document.getElementById("quest-body");
         questBody.innerHTML = current_question.question;
         document.getElementById("back").style.display = "block"
@@ -46,7 +46,7 @@ var prevQuestion = function () {
     current_question = finalQuestions[quest_num];
     current_question.remove(answers[quest_num]);
     header = document.getElementById("quest-num");
-    header.innerHTML = "Question " + (1 + quest_num).toString() + " of 100";
+    header.innerHTML = "Question " + (1 + quest_num).toString() + " of " + questions.length.toString();
     questBody = document.getElementById("quest-body");
     questBody.innerHTML = current_question.question;
 
