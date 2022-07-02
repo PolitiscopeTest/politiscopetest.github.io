@@ -99,7 +99,7 @@ warStanceOpposite = 100 - warStance;
 indVsCollOpposite = 100 - indVsColl;
 globalPolicyOpposite = 100 - globalPolicy;
 politicalTraditionalismOpposite = 100 - politicalTraditionalism;
-powerSstructOpposite = 100 - powerStruct;
+powerStructOpposite = 100 - powerStruct;
 
 setBarValue("market", economic);
 setBarValue("equality", econOpposite);
