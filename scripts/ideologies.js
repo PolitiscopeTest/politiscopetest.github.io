@@ -569,5 +569,16 @@ ideologies = [
             "free": 0,
             "indi": 0
         }
+    },
+    {
+        "name": "Orwellianism",
+        "stats": {
+            "econ": 80,
+            "dipl": 0,
+            "govt": 100,
+            "scty": 0,
+            "free": 100,
+            "indi": 100
+        }
     }
 ];

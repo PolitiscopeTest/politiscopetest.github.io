@@ -56,7 +56,7 @@ var prevQuestion = function () {
 }
 
 function calc_score(score) {
-    return 50 + score;
+    return 150 + score;
 }
 
 var results = function () {

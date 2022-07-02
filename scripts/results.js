@@ -9,12 +9,19 @@ function parseURLVariable(variable) {
 }
 
 function setBarValue(name, value) {
+    value = Math.round(value/3);
+    if (value < 0) {
+        value = 0;
+    }
+    if (value > 100) {
+        value = 100;
+    }
     outerel = document.getElementById(name);
     innerel = outerel.getElementsByClassName("text-wrapper")[0];
-    outerel.style.width = (value + "%")
-    innerel.innerHTML = (value + "%")
+    outerel.style.width = (value + "%");
+    innerel.innerHTML = (value + "%");
     if (innerel.offsetWidth + 20 > outerel.offsetWidth) {
-        innerel.style.visibility = "hidden"
+        innerel.style.visibility = "hidden";
     }
 }
 
@@ -92,14 +99,14 @@ globalPolicy = parseURLVariable("global-policy");
 politicalTraditionalism = parseURLVariable("political-traditionalism");
 powerStruct = parseURLVariable("power-struct");
 
-econOpposite = 100 - economic;
-powerDistOpposite = 100 - powerDist;
-freeVsSecOpposite = 100 - freeVsSec;
-warStanceOpposite = 100 - warStance;
-indVsCollOpposite = 100 - indVsColl;
-globalPolicyOpposite = 100 - globalPolicy;
-politicalTraditionalismOpposite = 100 - politicalTraditionalism;
-powerStructOpposite = 100 - powerStruct;
+econOpposite = 200 - economic;
+powerDistOpposite = 200 - powerDist;
+freeVsSecOpposite = 200 - freeVsSec;
+warStanceOpposite = 200 - warStance;
+indVsCollOpposite = 200 - indVsColl;
+globalPolicyOpposite = 200 - globalPolicy;
+politicalTraditionalismOpposite = 200 - politicalTraditionalism;
+powerStructOpposite = 200 - powerStruct;
 
 setBarValue("market", economic);
 setBarValue("equality", econOpposite);
