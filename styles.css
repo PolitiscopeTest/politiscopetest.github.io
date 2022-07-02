@@ -147,6 +147,8 @@ p.question {
     justify-content: center;
     align-items: center;
     text-align: center;
+    min-height: 144px;
+    min-width: 500pt;
 }
 
 .optionButton {
