@@ -21,7 +21,7 @@ var makeChoice = function (choice) {
 var questionsInit = function () {
     current_question = finalQuestions[quest_num];
     header = document.getElementById("quest-num");
-    header.innerHTML = "Question " + (1 + quest_num).toString() + " of 100";
+    header.innerHTML = "Question " + (1 + quest_num).toString() + " of " + questions.length.toString();
     questBody = document.getElementById("quest-body");
     questBody.innerHTML = current_question.question;
 }
