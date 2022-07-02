@@ -224,7 +224,7 @@ var questions = [
         ]
     ), 
     makeQuestion(
-        "Communism, if implemented correctly, would the best form of economics.",
+        "Communism, if implemented correctly, would be the best form of economics.",
         [
             makeTenet("economic", true),
             makeMajorPoint("power-struct", false),
