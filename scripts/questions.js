@@ -386,7 +386,7 @@ var questions = [
         ]
     ),
     makeQuestion(
-        "Everyone has the rights to universal healthcare, offordable housing, and a stable job.",
+        "Everyone has the rights to universal healthcare, affordable housing, and a stable job.",
         [
             makeMajorPoint("economic", true),
             makeMajorPoint("political-traditionalism", true),
