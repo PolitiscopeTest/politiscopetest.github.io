@@ -415,7 +415,7 @@ var questions = [
         ]
     ),
     makeQuestion(
-        "Many laws should depend more on the residents of a local area rather then the residents of the nation.",
+        "Many laws should depend more on the residents of a local area rather than the residents of the nation.",
         [
             makeMajorPoint("power-dist", false),
             makeMinorPoint("political-traditionalism", false)
