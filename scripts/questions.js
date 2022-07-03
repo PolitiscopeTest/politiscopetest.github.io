@@ -457,7 +457,7 @@ var questions = [
         ]
     ),
     makeQuestion(
-        "Governments should make decisions for those who are unable to make the correct decision for themselves",
+        "Governments should be empowered to make decisions as a substitute for its citizens to ensure equity across the nation regardless of race gender, wealth, status etc.",
         [
             makePointObj("free-vs-sec", -100, -50, 2, 4),
             makePointObj("power-struct", 100, 50, -2, -4),
