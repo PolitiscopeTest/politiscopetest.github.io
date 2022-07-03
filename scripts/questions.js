@@ -115,7 +115,7 @@ var questions = [
         ]
     ),
     makeQuestion(
-        "I love my coutry despite all else.",
+        "I love my country despite all else.",
         [
             makePointObj("global-policy", 8, 4, 0, -2)
         ]
@@ -143,7 +143,7 @@ var questions = [
         ]
     ),
     makeQuestion(
-        "Provincial/State laws should have precedent over national laws.",
+        "Provincial/State laws should have precedence over national laws.",
         [
             makeMajorPoint("power-struct", true),
             makeMinorPoint("political-traditionalism", false)
@@ -283,7 +283,7 @@ var questions = [
         ]
     ),
     makeQuestion(
-        "People who served in the military deserve preferencial treatment.",
+        "People who served in the military deserve preferential treatment.",
         [
             makeMajorPoint("war-stance", true),
             makeMajorPoint("ind-vs-coll", true)
@@ -378,11 +378,11 @@ var questions = [
         ]
     ),
     makeQuestion(
-        "Universal Basic Income is necessary.",
+        "Wellfare is a necessary institution in a society.",
         [
             makeMajorPoint("political-traditionalism", true),
             makeMajorPoint("economic", true),
-            makePointObj("power-dist", -2, -1, 0, 0)
+            makeMinorPoint("power-dist", true)
         ]
     ),
     makeQuestion(
@@ -394,7 +394,7 @@ var questions = [
         ]
     ),
     makeQuestion(
-        "Documents like the Constitution are \"Living Documents,\" meaning they can be interpreted based on the context of the situation.",
+        "Documents like the Constitution (or other founding documents) are \"Living Documents,\" meaning they are interpreted based on the context of current day.",
         [
             makeTenet("political-traditionalism", true),
         ]
@@ -422,14 +422,14 @@ var questions = [
         ]
     ),
     makeQuestion(
-        "Local governments can handle issues that the national government can't.",
+        "Local governments handle most situations better than a national government",
         [
             makeMajorPoint("power-dist", false),
             makeMinorPoint("political-traditionalism", false)
         ]
     ),
     makeQuestion(
-        "The United Nations should have a military to enforce its resolutions.",
+        "The United Nations should have a military to enforce its decisions.",
         [
             makeMajorPoint("global-policy", false),
             makeMinorPoint("political-traditionalism", false),
@@ -437,7 +437,7 @@ var questions = [
         ]
     ),
     makeQuestion(
-        "We are not members of a nation, instead we are members of this planet.",
+        "We are first and foremost citizens of Earth.",
         [
             makeMajorPoint("global-policy", false),
             makeMinorPoint("ind-vs-coll", true)
@@ -457,7 +457,7 @@ var questions = [
         ]
     ),
     makeQuestion(
-        "People should not be be free because they are unable to make the correct decisions for themselves.",
+        "Governments should make decisions for those who are unable to make the correct decision for themselves",
         [
             makePointObj("free-vs-sec", -100, -50, 2, 4),
             makePointObj("power-struct", 100, 50, -2, -4),
