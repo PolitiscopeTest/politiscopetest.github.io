@@ -171,7 +171,7 @@ ideologies = [
             "govt": 30,
             "scty": 70,
             "free": 70,
-            "indi": 85
+            "indi": 100
         }
     },
     {
@@ -325,7 +325,7 @@ ideologies = [
             "govt": 30,
             "scty": 30,
             "free": 40,
-            "indi": 75
+            "indi": 100
         }
     },
     {
@@ -364,10 +364,10 @@ ideologies = [
     {
         "name": "Libertarianism",
         "stats": {
-            "econ": 40,
+            "econ": 25,
             "dipl": 60,
             "govt": 80,
-            "scty": 60,
+            "scty": 30,
             "free": 20,
             "indi": 15
         }
@@ -379,7 +379,7 @@ ideologies = [
             "dipl": 50,
             "govt": 100,
             "scty": 50,
-            "free": 30,
+            "free": 15,
             "indi": 0
         }
     },

@@ -60,7 +60,7 @@ var makeTenet = function (type, negate) {
     return makePointObj(type, 6 * mult, 4 * mult, -4 * mult, -6 * mult)
 }
 
-var makeMinutePoint = function(type, negate) {
+var makeMinutePoint = function (type, negate) {
     let mult = 1;
     if (negate) {
         mult = -1;
@@ -87,7 +87,6 @@ var questions = [
     makeQuestion(
         "Regulation is necessary to prevent corporations from destroying the environment.",
         [
-
             makeMajorPoint("economic", false),
             makeMinorPoint("power-struct", true)
         ]
@@ -222,7 +221,7 @@ var questions = [
         [
             makeMinorPoint("political-traditionalism", false)
         ]
-    ), 
+    ),
     makeQuestion(
         "Communism, if implemented correctly, would be the best form of economics.",
         [
@@ -404,6 +403,7 @@ var questions = [
         [
             makeMajorPoint("free-vs-sec", true),
             makeTenet("power-struct", false),
+            makeMajorPoint("political-traditionalism"),
             makeMinorPoint("war-stance", false),
             makeMinorPoint("power-dist", false)
         ]
@@ -459,16 +459,100 @@ var questions = [
     makeQuestion(
         "Governments should be empowered to make decisions as a substitute for its citizens to ensure equity across the nation regardless of race gender, wealth, status, etc.",
         [
-            makePointObj("free-vs-sec", -100, -50, 2, 4),
-            makePointObj("power-struct", 100, 50, -2, -4),
+            makePointObj("free-vs-sec", -12, -8, 4, 8),
+            makePointObj("power-struct", 12, 8, -4, -6),
         ]
     ),
     makeQuestion(
         "The government should control the whole economy to prevent the exploitation of the masses.",
         [
-            makePointObj("economy", -100, -50, 2, 4),
-            makePointObj("ind-vs-coll", -20, -10, 2, 4),
+            makePointObj("economy", -12, -8, 2, 4),
+            makePointObj("ind-vs-coll", -10, -6, 2, 4),
             makeMajorPoint("power-dist", true)
+        ]
+    ),
+    makeQuestion(
+        "Representatives represent the people's interests.",
+        [
+            makeMajorPoint("power-struct", true),
+            makeMinorPoint("power-dist", false)
+        ]
+    ),
+    makeQuestion(
+        "The majority opinion should always be followed.",
+        [
+            makeTenet("ind-vs-coll", true),
+            makeMajorPoint("power-struct", false)
+        ]
+    ),
+    makeQuestion(
+        "International trade is generally beneficial.",
+        [
+            makeMinorPoint("global-policy", false),
+            makeMajorPoint("economic", false)
+        ]
+    ),
+    makeQuestion(
+        "The government should stay out of the economy.",
+        [
+            makeTenet("economic", false),
+            makeMajorPoint("power-struct", true)
+        ]
+    ),
+    makeQuestion(
+        "Surveillance has gone too far.",
+        [
+            makeMajorPoint("free-vs-sec", false),
+            makeMinorPoint("power-struct", true),
+            makeMinorPoint("power-dist", false)
+        ]
+    ),
+    makeQuestion(
+        "People have the right to leave their wealth to their descendents.",
+        [
+            makeMajorPoint("economic", false),
+            makeMinorPoint("power-struct", true),
+            makeMinorPoint("political-traditionalism", false)
+        ]
+    ),
+    makeQuestion(
+        "States/Provinces should have their own militaries",
+        [
+            makeMajorPoint("power-dist", false),
+            makeMajorPoint("power-struct", true),
+            makeMinorPoint("political-traditionalism", false)
+        ]
+    ),
+    makeQuestion(
+        "Vaccines should be required for all people in order to eliminate harmful diseases", 
+        [
+            makeMajorPoint("free-vs-sec", true),
+            makeMajorPoint("power-struct", false)
+        ]
+    ),
+    makeQuestion(
+        "Everyone should be implanted with microchips to help prevent crime or catch criminals",
+        [
+            makeTenet("free-vs-sec", true),
+            makeMajorPoint("power-struct", false)
+        ]
+    ),
+    makeQuestion(
+        "We should nuke our enemies",
+        [
+            makePointObj("war-stance", 16, 12, -2, -4)
+        ]
+    ),
+    makeQuestion(
+        "It is better to maintain a balanced budget than to ensure welfare for all citizens.",
+        [
+            makeMajorPoint("economic", false)
+        ]
+    ),
+    makeQuestion(
+        "It is important to maintain our national sovereignty.",
+        [
+            makeMajorPoint("global-policy", true)
         ]
     )
 ]
