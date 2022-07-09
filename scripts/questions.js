@@ -57,7 +57,7 @@ var makeTenet = function (type, negate) {
     if (negate) {
         mult = -1;
     }
-    return makePointObj(type, 6 * mult, 4 * mult, -4 * mult, -6 * mult)
+    return makePointObj(type, 8 * mult, 6 * mult, -6 * mult, -8 * mult)
 }
 
 var makeMinutePoint = function (type, negate) {
