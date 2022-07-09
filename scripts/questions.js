@@ -81,7 +81,7 @@ var questions = [
         [
             makeTenet("economic", true),
             makeTenet("ind-vs-coll", true),
-            makeMajorPoint("political-traditionalism", true)
+            makeTenet("political-traditionalism", true)
         ]
     ),
     makeQuestion(
@@ -221,7 +221,7 @@ var questions = [
             makeTenet("economic", true),
             makeMajorPoint("power-struct", false),
             makeMajorPoint("power-dist", true),
-            makeMajorPoint("ind-vs-coll", true)
+            makeTenet("ind-vs-coll", true)
         ]
     ),
     makeQuestion(
@@ -241,7 +241,7 @@ var questions = [
         "A united world government would be beneficial to mankind.",
         [
             makeTenet("global-policy", false),
-            makeMinorPoint("ind-vs-coll", true),
+            makeMajorPoint("ind-vs-coll", true),
             makeMinorPoint("power-dist", true)
         ]
     ),
@@ -365,7 +365,7 @@ var questions = [
         [
             makeTenet("economic", true),
             makeMajorPoint("ind-vs-coll", true),
-            makeMajorPoint("political-traditionalism", true),
+            makeTenet("political-traditionalism", true),
             makeMajorPoint("power-struct", false)
         ]
     ),
@@ -396,7 +396,7 @@ var questions = [
         [
             makeMajorPoint("free-vs-sec", true),
             makeTenet("power-struct", false),
-            makeMajorPoint("political-traditionalism"),
+            makeTenet("political-traditionalism", true),
             makeMinorPoint("war-stance", false),
             makeMinorPoint("power-dist", false)
         ]
@@ -425,7 +425,7 @@ var questions = [
         "The United Nations should have a military to enforce its decisions.",
         [
             makeMajorPoint("global-policy", false),
-            makeMinorPoint("political-traditionalism", false),
+            makeMinorPoint("political-traditionalism", true),
             makeMinutePoint("war-stance", true)
         ]
     ),
@@ -433,7 +433,7 @@ var questions = [
         "We are first and foremost citizens of Earth.",
         [
             makeMajorPoint("global-policy", false),
-            makeMinorPoint("ind-vs-coll", true)
+            makeMajorPoint("ind-vs-coll", true)
         ]
     ),
     makeQuestion(
@@ -460,7 +460,7 @@ var questions = [
         "The government should control the whole economy to prevent the exploitation of the masses.",
         [
             makePointObj("economy", -12, -8, 2, 4),
-            makePointObj("ind-vs-coll", -10, -6, 2, 4),
+            makePointObj("ind-vs-coll", -10, -6, 6, 10),
             makeMajorPoint("power-dist", true)
         ]
     ),
@@ -513,7 +513,7 @@ var questions = [
         [
             makeMajorPoint("power-dist", false),
             makeMajorPoint("power-struct", true),
-            makeMinorPoint("political-traditionalism", false)
+            makePointObj("political-traditionalism", 4, 2, 0, 0)
         ]
     ),
     makeQuestion(
@@ -598,7 +598,7 @@ var questions = [
             makeMajorPoint("power-struct", false),
             makeMajorPoint("global-policy", false),
             makeMinorPoint("power-dist", true),
-            makeMinorPoint("political-traditionalism", true)
+            makeTenet("political-traditionalism", true)
         ]
     ),
     makeQuestion(
@@ -606,7 +606,7 @@ var questions = [
         [
             makeMajorPoint("economic", false),
             makeMinorPoint("power-dist", true),
-            makeMinorPoint("political-traditionalism", false)
+            makeMajorPoint("political-traditionalism", false)
         ]
     ),
     makeQuestion(
