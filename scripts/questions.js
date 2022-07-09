@@ -370,7 +370,7 @@ var questions = [
         ]
     ),
     makeQuestion(
-        "Wellfare is a necessary institution in a society.",
+        "Welfare is a necessary institution in a society.",
         [
             makeMajorPoint("political-traditionalism", true),
             makeMajorPoint("economic", true),
