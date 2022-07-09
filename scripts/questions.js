@@ -123,7 +123,7 @@ var questions = [
         "I stand by the principles of my country.",
         [
             makeMajorPoint("global-policy", false),
-            makeMinorPoint("political-traditionalism", false)
+            makeMajorPoint("political-traditionalism", false)
         ]
     ),
     makeQuestion(
@@ -145,7 +145,7 @@ var questions = [
         "Provincial/State laws should have precedence over national laws.",
         [
             makeMajorPoint("power-struct", true),
-            makeMinorPoint("political-traditionalism", false)
+            makePointObj("political-traditionalism", 4, 2, 0, 0)
         ]
     ),
     makeQuestion(
@@ -176,7 +176,7 @@ var questions = [
         "Subdivisions of nations should have their own militaries.",
         [
             makeMajorPoint("power-dist", false),
-            makeMajorPoint("political-traditionalism", false)
+            makePointObj("political-traditionalism", 4, 2, 0, 0)
         ]
     ),
     makeQuestion(
@@ -212,7 +212,7 @@ var questions = [
     makeQuestion(
         "Society was better many years ago than it is now.",
         [
-            makeMinorPoint("political-traditionalism", false)
+            makeMajorPoint("political-traditionalism", false)
         ]
     ),
     makeQuestion(
@@ -251,7 +251,7 @@ var questions = [
             makePointObj("economic", 12, 7, -7, -12),
             makeMajorPoint("ind-vs-coll", false),
             makeMinorPoint("power-struct", true),
-            makeMinorPoint("political-traditionalism", false)
+            makeMajorPoint("political-traditionalism", false)
         ]
     ),
     makeQuestion(
@@ -357,7 +357,7 @@ var questions = [
         [
             makeTenet("economic", true),
             makeMajorPoint("ind-vs-coll", true),
-            makeMajorPoint("political-traditionalism", true)
+            makeTenet("political-traditionalism", true)
         ]
     ),
     makeQuestion(
