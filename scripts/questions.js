@@ -561,6 +561,60 @@ var questions = [
             makeMajorPoint("ind-vs-coll", true),
             makeMajorPoint("economic", true)
         ]
+    ),
+    makeQuestion(
+        "Quality education is a right of all people.",
+        [
+            makeMajorPoint("economic", true),
+            makeMajorPoint("political-traditionalism", true)
+        ]
+    ),
+    makeQuestion(
+        "Military action by our nation is often necessary to protect it.",
+        [
+            makeMajorPoint("war-stance", true),
+            makeMinorPoint("global-policy", true)
+        ]
+    ),
+    makeQuestion(
+        "The only time a nation can prosper is in peace time.",
+        [
+            makeMajorPoint("war-stance", false),
+            makeMinorPoint("economic", false)
+        ]
+    ),
+    makeQuestion(
+        "States/Provinces have the right to secede from their parent country.",
+        [
+            makeTenet("power-dist", false),
+            makePointObj("political-traditionalism", 8, 4, 0, 0)
+        ]
+    ),
+    makeQuestion(
+        "All billionaires got their wealth through exploitation.",
+        [
+            makeMajorPoint("economic", true),
+            makeMajorPoint("political-traditionalism", true)
+        ]
+    ), 
+    makeQuestion(
+        "Organizations like the CDC should be able to override government policy to aid in medical emergencies.",
+        [
+            makeMajorPoint("free-vs-sec", true),
+            makeMajorPoint("economic", true),
+            makeMajorPoint("power-struct", false),
+            makeMajorPoint("global-policy", false),
+            makeMinorPoint("power-dist", true),
+            makeMinorPoint("political-traditionalism", true)
+        ]
+    ),
+    makeQuestion(
+        "Private charities often provide better assistance to the poor and vulnerable than the government does.",
+        [
+            makeMajorPoint("economic", false),
+            makeMinorPoint("power-dist", true),
+            makeMinorPoint("political-traditionalism", false)
+        ]
     )
 ]
 
