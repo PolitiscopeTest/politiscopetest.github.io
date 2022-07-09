@@ -22,6 +22,13 @@ var makePointObj = function (type, strongAgree, agree, disagree, strongDisagree)
     choices.set("disagree", disagree);
     choices.set("strongDisagree", strongDisagree);
     choices.set("neutral", 0)
+    if (Math.abs(strongAgree) > Math.abs(strongDisagree)) {
+        let val = max_scores.get(type);
+        max_scores.set(type, val + Math.abs(strongAgree))
+    } else {
+        let val = max_scores.get(type);
+        max_scores.set(type, val + Math.abs(strongDisagree))
+    }
     return {
         category: type,
         points: choices,
@@ -167,7 +174,7 @@ var questions = [
         "The government should monitor all citizens to combat terrorism.",
         [
             makeTenet("free-vs-sec", true),
-            makeMinorPoint("economy", true),
+            makeMinorPoint("economic", true),
             makeMinorPoint("power-struct", false),
             makeMinorPoint("power-dist")
         ]
@@ -304,8 +311,7 @@ var questions = [
     makeQuestion(
         "We have no right to militarily intervene in other nations.",
         [
-            makeMajorPoint("war-stance", false),
-            makeMajorPoint("political-traditionalism", false)
+            makeMajorPoint("war-stance", false)
         ]
     ),
     makeQuestion(
@@ -324,7 +330,7 @@ var questions = [
         ]
     ),
     makeQuestion(
-        "The death penalty should be used for all felonies.",
+        "The death penalty should be used for all crimes.",
         [
             makePointObj("free-vs-sec", -8, -6, 6, 8),
             makeTenet("power-struct", false),
@@ -353,7 +359,7 @@ var questions = [
         ]
     ),
     makeQuestion(
-        "Equality of outcome is important.",
+        "All people should get the same rewards regardless of their work.",
         [
             makeTenet("economic", true),
             makeMajorPoint("ind-vs-coll", true),
@@ -440,7 +446,7 @@ var questions = [
         "Protectionism is always necessary to protect a nation's economy.",
         [
             makeMajorPoint("global-policy", true),
-            makeMinorPoint("economic", true)
+            makeMajorPoint("economic", true)
         ]
     ),
     makeQuestion(
@@ -459,7 +465,7 @@ var questions = [
     makeQuestion(
         "The government should control the whole economy to prevent the exploitation of the masses.",
         [
-            makePointObj("economy", -12, -8, 2, 4),
+            makePointObj("economic", -12, -8, 2, 4),
             makePointObj("ind-vs-coll", -10, -6, 6, 10),
             makeMajorPoint("power-dist", true)
         ]
@@ -613,7 +619,82 @@ var questions = [
         [
             makeMajorPoint("economic", false)
         ]
-    )
+    )//,
+    // makeQuestion(
+    //     "Controlling inflation is more important than controlling unemployment."
+    // ),
+    // makeQuestion(
+    //     "It's a sad reflection on our society that something as basic as drinking water is now a bottled, branded consumer product."
+    // ),
+    // makeQuestion(
+    //     "The only social responsibility of a company should be to deliver a profit to its shareholders."
+    // ),
+    // makeQuestion(
+    //     "A significant advantage of a one-party state is that it avoids all the arguments that delay progress in a democratic political system."
+    // ),
+    // makeQuestion(
+    //     "Everything that can be left to the free market should be."
+    // ),
+    // makeQuestion(
+    //     "Government regulations rarely completely solve the problem they intended to fix."
+    // ),
+    // makeQuestion(
+    //     "People should be able to volunteer for experimental treatments when they have no treatment and will die if they do not"
+    // ),
+    // makeQuestion(
+    //     "My country should not have elections or votes"
+    // ),
+    // makeQuestion(
+    //     "The government has too much power"
+    // ),
+    // makeQuestion(
+    //     "People who spread misinformation should be punished"
+    // ),
+    // makeQuestion(
+    //     "For any economic problem, there is a regulation that can fix it"
+    // ),
+    // makeQuestion(
+        
+    // ),
+    // makeQuestion(
+
+    // ),
+    // makeQuestion(
+
+    // ),
+    // makeQuestion(
+
+    // ),
+    // makeQuestion(
+
+    // ),
+    // makeQuestion(
+
+    // ),
+    // makeQuestion(
+
+    // ),
+    // makeQuestion(
+
+    // ),
+    // makeQuestion(
+
+    // ),
+    // makeQuestion(
+
+    // ),
+    // makeQuestion(
+
+    // ),
+    // makeQuestion(
+
+    // ),
+    // makeQuestion(
+
+    // ),
+    // makeQuestion(
+
+    // )
 ]
 
 var finalQuestions = null;

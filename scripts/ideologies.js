@@ -580,5 +580,16 @@ ideologies = [
             "free": 100,
             "indi": 100
         }
+    },
+    {
+        "name": "Capitalist Constitutionalism",
+        "stats": {
+            "econ": 9,
+            "dipl": 27,
+            "govt": 95,
+            "scty": 0,
+            "free": 5,
+            "indi": 0
+        }
     }
 ];
