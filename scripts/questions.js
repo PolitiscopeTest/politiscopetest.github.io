@@ -270,34 +270,34 @@ var questions = [
     makeQuestion(
         "People who served in the military should be respected.",
         [
-            makeMajorPoint("war-stance", true),
+            makePointObj("war-stance", 2, 1, -4, -6),
             makeMinorPoint("global-policy", true)
         ]
     ),
     makeQuestion(
         "People who served in the military deserve preferential treatment.",
         [
-            makeMajorPoint("war-stance", true),
+            makeTenet("war-stance", true),
             makeMajorPoint("ind-vs-coll", true)
         ]
     ),
     makeQuestion(
         "There should be mandatory military service.",
         [
-            makeMajorPoint("war-stance", true),
+            makeTenet("war-stance", true),
             makeMajorPoint("power-struct", false)
         ]
     ),
     makeQuestion(
         "Diplomatic options should always be tried before war is even considered.",
         [
-            makeMajorPoint("war-stance", false)
+            makeTenet("war-stance", false)
         ]
     ),
     makeQuestion(
         "Even when protesting an authoritarian government, violence is not acceptable.",
         [
-            makeMajorPoint("war-stance", false),
+            makeMinutePoint("war-stance", false),
             makeMajorPoint("free-vs-sec", true)
         ]
     ),
@@ -397,7 +397,7 @@ var questions = [
             makeMajorPoint("free-vs-sec", true),
             makeTenet("power-struct", false),
             makeTenet("political-traditionalism", true),
-            makeMinorPoint("war-stance", false),
+            makeMajorPoint("war-stance", false),
             makeMinorPoint("power-dist", false)
         ]
     ),
@@ -533,7 +533,7 @@ var questions = [
     makeQuestion(
         "We should nuke our enemies",
         [
-            makePointObj("war-stance", 16, 12, -2, -4)
+            makePointObj("war-stance", 16, 12, 0, -1)
         ]
     ),
     makeQuestion(
@@ -572,8 +572,7 @@ var questions = [
     makeQuestion(
         "The only time a nation can prosper is in peace time.",
         [
-            makeMajorPoint("war-stance", false),
-            makeMinorPoint("economic", false)
+            makeTenet("war-stance", false)
         ]
     ),
     makeQuestion(
