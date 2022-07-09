@@ -311,14 +311,14 @@ var questions = [
     makeQuestion(
         "Those who disagree with the government should be removed from the country.",
         [
-            makePointObj("free-vs-sec", -16, -12, 2, 4),
+            makePointObj("free-vs-sec", -16, -12, 12, 16),
             makeTenet("power-struct", false)
         ]
     ),
     makeQuestion(
         "Those who say things against the government deserve to be imprisoned.",
         [
-            makePointObj("free-vs-sec", -8, -6, 2, 4),
+            makePointObj("free-vs-sec", -8, -6, 6, 8),
             makeTenet("power-struct", false),
             makeMajorPoint("power-dist", true)
         ]
@@ -326,7 +326,7 @@ var questions = [
     makeQuestion(
         "The death penalty should be used for all felonies.",
         [
-            makePointObj("free-vs-sec", -8, -6, 2, 4),
+            makePointObj("free-vs-sec", -8, -6, 6, 8),
             makeTenet("power-struct", false),
             makeMajorPoint("war-stance", true)
         ]
@@ -334,7 +334,7 @@ var questions = [
     makeQuestion(
         "Laws are important to ensure civilized society.",
         [
-            makePointObj("free-vs-sec", 4, 2, -1, -2),
+            makePointObj("free-vs-sec", 0, 0, 5, 10),
             makeMinutePoint("power-struct", false)
         ]
     ),
@@ -452,7 +452,7 @@ var questions = [
     makeQuestion(
         "Governments should be empowered to make decisions as a substitute for its citizens to ensure equity across the nation regardless of race gender, wealth, status, etc.",
         [
-            makePointObj("free-vs-sec", -12, -8, 4, 8),
+            makePointObj("free-vs-sec", -12, -8, 8, 12),
             makePointObj("power-struct", 12, 8, -4, -6),
         ]
     ),
@@ -517,7 +517,7 @@ var questions = [
         ]
     ),
     makeQuestion(
-        "Vaccines should be required for all people in order to eliminate harmful diseases", 
+        "Vaccines should be required for all people in order to eliminate harmful diseases",
         [
             makeMajorPoint("free-vs-sec", true),
             makeMajorPoint("power-struct", false)
@@ -589,7 +589,7 @@ var questions = [
             makeMajorPoint("economic", true),
             makeMajorPoint("political-traditionalism", true)
         ]
-    ), 
+    ),
     makeQuestion(
         "Organizations like the CDC should be able to override government policy to aid in medical emergencies.",
         [

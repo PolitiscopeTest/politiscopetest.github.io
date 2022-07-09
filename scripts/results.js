@@ -9,7 +9,7 @@ function parseURLVariable(variable) {
 }
 
 function setBarValue(name, value) {
-    value = Math.round(value/3);
+    value = Math.round(value / 3);
     if (value < 0) {
         value = 0;
     }
@@ -29,6 +29,9 @@ let leftArray = ["Capitalist", "Authoritarian", "Individualist", "Conservative",
 let rightArray = ["Socialist", "Libertarian", "Collectivist", "Liberal", "Statist", "Security", "Sovereigntist", "Militarist"]
 
 function setLabel(val, axis) {
+    if (val >= 300) {
+        return "Ultra " + leftArray[axis]
+    }
     if (val >= 270) {
         return "Fanatic " + leftArray[axis]
     }
@@ -53,12 +56,17 @@ function setLabel(val, axis) {
     else if (val > 30) {
         return "Extreme " + rightArray[axis]
     }
-    else {
+    else if (val >= 0) {
         return "Fanatic " + rightArray[axis]
+    } else {
+        return "Ultra " + rightArray[axis]
     }
 }
 
 function setLabelGlobalPolicy(val) {
+    if (val >= 300) {
+        return "Ultra Globalist"
+    }
     if (val >= 270) {
         return "Fanatic Globalist"
     }
@@ -143,12 +151,12 @@ ideology = ""
 ideodist = Infinity
 for (var i = 0; i < ideologies.length; i++) {
     dist = 0
-    dist += Math.pow(Math.abs(ideologies[i].stats.econ - Math.round(econOpposite/3)), 2)
-    dist += Math.pow(Math.abs(ideologies[i].stats.govt - Math.round(powerStructOpposite/3)), 2) 
-    dist += Math.pow(Math.abs(ideologies[i].stats.free - Math.round(freeVsSecOpposite/3)), 2)
-    dist += Math.pow(Math.abs(ideologies[i].stats.dipl - Math.round(globalPolicy/3)), 1.73856063)
-    dist += Math.pow(Math.abs(ideologies[i].stats.scty - Math.round(politicalTraditionalismOpposite/3)), 1.73856063)
-    dist += Math.pow(Math.abs(ideologies[i].stats.indi - Math.round(indVsCollOpposite/3)), 1.73856063)
+    dist += Math.pow(Math.abs(ideologies[i].stats.econ - Math.round(econOpposite / 3)), 2)
+    dist += Math.pow(Math.abs(ideologies[i].stats.govt - Math.round(powerStructOpposite / 3)), 2)
+    dist += Math.pow(Math.abs(ideologies[i].stats.free - Math.round(freeVsSecOpposite / 3)), 2)
+    dist += Math.pow(Math.abs(ideologies[i].stats.dipl - Math.round(globalPolicy / 3)), 1.73856063)
+    dist += Math.pow(Math.abs(ideologies[i].stats.scty - Math.round(politicalTraditionalismOpposite / 3)), 1.73856063)
+    dist += Math.pow(Math.abs(ideologies[i].stats.indi - Math.round(indVsCollOpposite / 3)), 1.73856063)
     if (dist < ideodist) {
         ideology = ideologies[i].name
         ideodist = dist
