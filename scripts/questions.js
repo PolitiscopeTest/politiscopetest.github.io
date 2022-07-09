@@ -210,13 +210,6 @@ var questions = [
         ]
     ),
     makeQuestion(
-        "People should have the right to leave their wealth to their descendents.",
-        [
-            makeMajorPoint("economic", false),
-            makeMinorPoint("political-traditionalism", false)
-        ]
-    ),
-    makeQuestion(
         "Society was better many years ago than it is now.",
         [
             makeMinorPoint("political-traditionalism", false)
@@ -614,6 +607,12 @@ var questions = [
             makeMajorPoint("economic", false),
             makeMinorPoint("power-dist", true),
             makeMinorPoint("political-traditionalism", false)
+        ]
+    ),
+    makeQuestion(
+        "Governments should break up monopolies",
+        [
+            makeMajorPoint("economic", false)
         ]
     )
 ]
