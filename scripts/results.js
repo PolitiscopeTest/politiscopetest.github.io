@@ -25,8 +25,8 @@ function setBarValue(name, value) {
     }
 }
 
-let leftArray = ["Market", "Authoritarian", "Individualist", "Conservatism", "Federalism", "Freedom", "Globalist", "Pacifist"]
-let rightArray = ["Equality", "Libertarian", "Collectivist", "Liberalism", "Statism", "Security", "Sovereigntist", "Militarist"]
+let leftArray = ["Capitalist", "Authoritarian", "Individualist", "Conservate", "Federalist", "Freedom", "Globalist", "Pacifist"]
+let rightArray = ["Socialist", "Libertarian", "Collectivist", "Liberal", "Statist", "Security", "Sovereigntist", "Militarist"]
 
 function setLabel(val, axis) {
     if (val >= 270) {
@@ -87,8 +87,6 @@ function setLabelGlobalPolicy(val) {
         return "Jingoist"
     }
 }
-
-
 
 economic = parseURLVariable("economic");
 powerDist = parseURLVariable("power-dist");

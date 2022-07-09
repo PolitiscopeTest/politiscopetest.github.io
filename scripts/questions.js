@@ -554,6 +554,13 @@ var questions = [
         [
             makeMajorPoint("global-policy", true)
         ]
+    ),
+    makeQuestion(
+        "The workers should own the factories they work in.",
+        [
+            makeMajorPoint("ind-vs-coll", true),
+            makeMajorPoint("economic", true)
+        ]
     )
 ]
 
