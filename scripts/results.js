@@ -25,7 +25,7 @@ function setBarValue(name, value) {
     }
 }
 
-let leftArray = ["Capitalist", "Authoritarian", "Individualist", "Conservate", "Federalist", "Freedom", "Globalist", "Pacifist"]
+let leftArray = ["Capitalist", "Authoritarian", "Individualist", "Conservative", "Federalist", "Freedom", "Globalist", "Pacifist"]
 let rightArray = ["Socialist", "Libertarian", "Collectivist", "Liberal", "Statist", "Security", "Sovereigntist", "Militarist"]
 
 function setLabel(val, axis) {
