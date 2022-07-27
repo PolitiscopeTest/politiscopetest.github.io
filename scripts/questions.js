@@ -619,40 +619,83 @@ var questions = [
         [
             makeMajorPoint("economic", false)
         ]
+    ),
+    makeQuestion(
+        "Controlling inflation is more important than controlling unemployment.",
+        [
+            makeMajorPoint("economic", false),
+            makeMinorPoint("ind-vs-coll", false)
+        ]
+    ),
+    makeQuestion(
+        "It's a sad reflection on our society that something as basic as drinking water is now a bottled, branded consumer product.",
+        [
+            makeMajorPoint("economic", true)
+        ]
+    ),
+    makeQuestion(
+        "The only social responsibility of a company should be to deliver a profit to its shareholders.",
+        [
+            makeMajorPoint("economic", false)
+        ]
+    ),
+    makeQuestion(
+        "A significant advantage of a one-party state is that it avoids all the arguments that delay progress in a democratic political system.",
+        [
+            makeTenet("power-dist", true),
+            makeMajorPoint("power-struct", false),
+            makePointObj("free-vs-sec", -2, -1, 0, 0)
+        ]        
+    ),
+    makeQuestion(
+        "Everything that can be left to the free market should be.",
+        [
+            makeMajorPoint("economic", true),
+            makeMinorPoint("power-struct", false)
+        ]
+    ),
+    makeQuestion(
+        "Government regulations rarely completely solve the problem they intended to fix.",
+        [
+            makeMinorPoint("economic", true),
+            makeMajorPoint("power-struct", false)
+        ]
+    ),
+    makeQuestion(
+        "People should be able to volunteer for experimental treatments when they have no treatment and will die if they do not",
+        [
+            makeMajorPoint("free-vs-sec", true),
+            makeMinutePoint("economic", false)
+        ]
+    ),
+    makeQuestion(
+        "My country should not have elections or votes",
+        [
+            makeMajorPoint("power-dist", true),
+            makeMajorPoint("power-struct", false),
+            makeMinutePoint("free-vs-sec", true)
+        ]
+    ),
+    makeQuestion(
+        "The government has too much power",
+        [
+            makeMajorPoint("power-struct", false)
+        ]
+    ),
+    makeQuestion(
+        "People who spread misinformation should be punished",
+        [
+            makeMajorPoint("power-struct", false),
+            makeMajorPoint("free-vs-sec", true)
+        ]
+    ),
+    makeQuestion(
+        "For any economic problem, there is a regulation that can fix it",
+        [
+            makeMajorPoint("economic", true),
+            makeMajorPoint("power-struct", false)
+        ]
     )//,
-    // makeQuestion(
-    //     "Controlling inflation is more important than controlling unemployment."
-    // ),
-    // makeQuestion(
-    //     "It's a sad reflection on our society that something as basic as drinking water is now a bottled, branded consumer product."
-    // ),
-    // makeQuestion(
-    //     "The only social responsibility of a company should be to deliver a profit to its shareholders."
-    // ),
-    // makeQuestion(
-    //     "A significant advantage of a one-party state is that it avoids all the arguments that delay progress in a democratic political system."
-    // ),
-    // makeQuestion(
-    //     "Everything that can be left to the free market should be."
-    // ),
-    // makeQuestion(
-    //     "Government regulations rarely completely solve the problem they intended to fix."
-    // ),
-    // makeQuestion(
-    //     "People should be able to volunteer for experimental treatments when they have no treatment and will die if they do not"
-    // ),
-    // makeQuestion(
-    //     "My country should not have elections or votes"
-    // ),
-    // makeQuestion(
-    //     "The government has too much power"
-    // ),
-    // makeQuestion(
-    //     "People who spread misinformation should be punished"
-    // ),
-    // makeQuestion(
-    //     "For any economic problem, there is a regulation that can fix it"
-    // ),
     // makeQuestion(
         
     // ),
